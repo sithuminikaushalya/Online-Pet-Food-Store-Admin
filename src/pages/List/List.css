@@ -1,0 +1,102 @@
+.list-table-format {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 0.3fr 0.2fr 0.2fr 0.3fr; /* Column widths */
+    align-items: center;
+    gap: 10px;
+    padding: 12px 12px;
+    border: 1px solid #cacaca;
+    font-size: 13px;
+}
+
+.list-table-format.title {
+    background-color: #f9f9f9;
+    font-weight: bold;
+    /* Keep the same grid-template-columns for alignment consistency */
+}
+
+.list-table-format.title b:last-child {
+    text-align: center; /* Align the last header ("Actions") to the right */
+}
+.list-table-format.title b:nth-child(5) {
+    text-align: center; /* Align the last header ("Actions") to the right */
+}
+.list-table-format.title b:nth-child(2) {
+    margin-left: 80px; /* Align the last header ("Actions") to the right */
+}
+.list-table-format.title b:nth-child(3) {
+    margin-left: -12px; /* Align the last header ("Actions") to the right */
+}
+
+.list-table-format img {
+    width: 50px;
+}
+
+.list-table-format .cursor,
+.list-table-format .edit-actions {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.list-table-format p:nth-child(5) {
+    text-align: center;
+}
+
+
+.list-table-format .cursor {
+    cursor: pointer;
+    color: red;
+    text-align: center;
+}
+
+.list-table-format .edit-actions {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: flex-end; /* Align edit actions to the right */
+}
+
+.list-table-format .edit-actions button {
+    margin-left: 5px;
+    padding: 4px 8px;
+    border: none;
+    background-color: #66cc99;
+    color: white;
+    cursor: pointer;
+}
+
+.list-table-format .edit-actions button:hover {
+    background-color: #66cc99;
+}
+
+.list-table-format input {
+    width: 100%; /* Make input fields fill the column width */
+    box-sizing: border-box; /* Ensure padding and borders are included in the total width */
+}
+
+
+@media (max-width: 600px) {
+    .list-table-format {
+        grid-template-columns: 0.5fr 1fr 0.3fr 1fr; /* Adjusted for smaller screens */
+        gap: 8px;
+    }
+
+    .list-table-format.title {
+        display: none;
+    }
+
+    .list-table-format img {
+        width: 40px; /* Reduced image size on smaller screens */
+    }
+
+    .list-table-format p,
+    .list-table-format .edit-actions,
+    .list-table-format .cursor {
+        grid-column: span 1;
+        text-align: left;
+    }
+
+    .list-table-format .cursor {
+        justify-self: end;
+        text-align: right;
+    }
+}

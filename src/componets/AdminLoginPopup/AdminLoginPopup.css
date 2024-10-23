@@ -1,0 +1,65 @@
+.admin-login-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Slightly darker background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+.admin-login-popup-container {
+    background: #f9f9f9; /* Light grey for professional look */
+    padding: 25px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 450px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.admin-login-popup-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+    font-size: 1.2rem;
+    color: #333; /* Darker text */
+}
+
+.admin-login-popup-inputs input {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    border: 1px solid #bbb; /* Subtle border */
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.admin-login-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #66cc99; /* Updated color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.admin-login-button:hover {
+    background-color: #57b88a; /* Slightly darker green on hover */
+    transition: background-color 0.3s;
+}
+
+.error-message {
+    color: red;
+    margin: 10px 0;
+    font-size: 0.9rem;
+    text-align: center;
+}

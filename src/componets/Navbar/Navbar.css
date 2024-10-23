@@ -1,0 +1,125 @@
+/* Navbar styling */
+.Navbar {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #66cc99;
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  top: 0;
+  left: 0;
+  color: #f1f2f3;
+  padding: 0 20px;
+  box-sizing: border-box;
+  z-index: 1000; /* Ensure it's on top of other elements */
+}
+
+/* Navbar title styling */
+.Navbar-title {
+  font-size: 42px; /* Larger font size */
+  font-weight: 600;
+  text-align: center;
+  flex-grow: 1;
+  margin-left: 40px;
+}
+.Navbar-menu a,
+.Navbar-menu li,
+.Navbar button,
+.Navbar .logout-button {
+  color: #f1f2f3; /* White text for all buttons including logout */
+  text-decoration: none;
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 20px;
+  padding: 10px 20px; /* Add padding for button-like appearance */
+  font-weight: 550;
+  border-radius: 25px; /* Capsule shape */
+  background-color: #66cc99; /* Match the navbar background */
+  border: 2.3px solid #f1f2f3;
+  margin-right: 30px; /* Optional: add a border for definition */
+}
+
+.Navbar-menu a:hover,
+.Navbar-menu li:hover,
+.Navbar button:hover,
+.Navbar .logout-button:hover {
+  background-color: #eb9e34; /* Change background color on hover */
+  color: #fff; /* Ensure the text remains visible */
+/* Remove hover border effect */
+}
+
+
+/* Adjustments for other content to be below the navbar */
+.app-content {
+  display: flex;
+  padding-top: 120px; /* Add padding to top of content to prevent overlap */
+}
+
+/* Sidebar styling */
+.Sidebar {
+  width: 200px;
+  /* Add other sidebar styles as needed */
+}
+
+/* Main content area styling */
+.MainContent {
+  flex-grow: 1;
+  padding: 20px;
+  /* Add other content styles as needed */
+}
+
+/* Modal styles (if needed) */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  max-width: 400px;
+}
+
+.modal-content button {
+  cursor: pointer;
+  background-color: #66cc99;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 10px;
+  border-radius: 6px;
+  width: 80px;
+  transition: background-color 0.3s ease;
+}
+
+.modal-content button:hover {
+  background-color: #4caf50;
+}
+
+.modal-content .button-group {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Logo styling */
+.Logo2 {
+  width: 102px;
+  height: auto;
+  margin-left: 8.5px;
+  border-radius: 0;
+}
